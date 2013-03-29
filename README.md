@@ -38,6 +38,14 @@ And do a `gem install` from that directory.
 Clone or otherwise obtain the files in this repository on your system. Copy or move the `.rb` and `.scss` files into
 similar containing directories in your Octopress instance.
 
+## Flickr API Key and Secret
+
+You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
+
+Then, you'll need to ensure that they are in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
+before you run `rake generate`. 
+
+
 ## Arguments
 
 On Flickr, the id of the image is easily obtained from the URL. In this case the id is '3696071951'.

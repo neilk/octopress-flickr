@@ -27,14 +27,15 @@ figcaption {
   @extend .basic-alignment;
   @include shadow-box;
   @include box-sizing(content-box);
+  background: #fff;
 }
 
 .flickr-thumbnail .description {
   display: none;
 }
 
-.flickr-thumbnail h5 {
-  font-size: xx-small;
+.flickr-thumbnail h1 {
+  font-size: small;
   font-family: $sans;
   text-align: center;
 }
@@ -82,7 +83,7 @@ figure a img, figure a video, figure a .flash-video {
 
 /* customization for fancybox */
 /* fonts  and layout */
-.fancybox-title, .fancybox-title h5 {
+.fancybox-title, .fancybox-title h1 {
   font-family: $sans;
   text-align: center;
 }
@@ -92,13 +93,17 @@ figure a img, figure a video, figure a .flash-video {
   overflow-y: auto;
 }
 
-.flickr-thumbnail h5, .fancybox-title h5 {
-  margin-bottom: 0px;
+.flickr-thumbnail h1 {
+  font-weight: normal;
 }
 
-.fancybox-title .flickr-link {
+.flickr-thumbnail h1, .fancybox-title h1 {
+  margin: 0.25em;
+}
+
+.flickr-link {
   padding-left: 18px;
-  background: url('/images/flickr-icon.png') center left no-repeat;
+  background: url(data:image/gif;base64,R0lGODlhEAAQAKUgAP8Aev8Ag/8HiwBT3QJX2gRg3ABq3iF94f1EpPpstVuY5P2Cvnaq6vKeyJO56IXI8vu83vLN4dXX1Mfb9f3V5OHi4PHf6Onr6Oru8+/18vz07P34+fH++f388/n+//z++////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKACAALAAAAAAQABAAAAaBQFBlSCwWhZ+kcrkcMp9Kp2ezpCqpQ0/S+tloP9qNlHFQTMAQBGKRdCoGBYIBQwkA7AnPEFPoxx8LdwGDHEMbfn+BgwECHBISHQwEkwcYFgJ3AAuOEhkZDgoMGBsZEQkIDZ6PFxcarhoXGBkcs7GrrLi5ube6vRe8vrsgj8TFxiBBADs=) center left no-repeat;
 }
 
 

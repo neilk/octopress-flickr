@@ -246,7 +246,7 @@ class FlickrPhotoHtml
         self.icon(x)
       }
       x.figcaption(captionAttrs) { |x|
-        x.h5{ |x|
+        x.h1{ |x|
           x.a('class' => 'flickr-link', 'href' => @page_url) { |x| x << @title }
           if @username
             x << " by "

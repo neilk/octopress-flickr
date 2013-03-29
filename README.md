@@ -113,5 +113,12 @@ This plugin generates HTML5. That means it uses tags like `<figure>` and `<figca
 but it seems to work in anything better than IE7. 
 
 
+## Be nice
+
+Flickr allows you to embed images in your blog, but they request you always link back to the source image. This plugin handles that for you by
+default, so don't mess with it.
+
+Obviously using your own images is fine, but be aware that you don't always have the rights to republish images on your own blog. If you want to
+be sure, ask the author's permission. Or use Flickr's [advanced search](https://www.flickr.com/search/advanced/) to find [Creative Commons](https://creativecommons.org)-licensed media. 
 
 

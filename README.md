@@ -3,6 +3,8 @@ octopress-flickr
 
 Display Flickr images, video, and sets in Octopress blog posts.
 
+This does not use JavaScript in the browser to insert images - it generates the appropriate HTML right in the post. Screenshots:
+
 ![Blog post using the flickr_image tag](screenshots/image.png)
 
 ![Blog post using the flickr_set tag](screenshots/set.png)

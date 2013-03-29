@@ -3,6 +3,13 @@ octopress-flickr
 
 Display Flickr images, video, and sets in Octopress blog posts.
 
+![Blog post using the flickr_image tag](screenshots/image.png)
+
+![Blog post using the flickr_set tag](screenshots/set.png)
+
+![Index view of a large image and a large video, at narrow width typical of mobile browsers](screenshots/mobile.png)
+
+
 ## Examples
 
 ``` md

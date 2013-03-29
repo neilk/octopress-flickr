@@ -23,7 +23,19 @@ Use `flickr_set` to insert an entire set.
 {% flickr_set 72157622329642662 t nodesc %}
 ```
 
-## How to use
+## Install
+
+Add these dependencies to your Octopress gemfile:
+
+``` Rakefile
+  gem 'flickraw'
+  gem 'builder', '> 2.0.0'
+  gem 'persistent_memoize'
+```
+
+And do a `gem install` from that directory.
+
+## How to use in a post
 
 The id of the image is easily obtained from the URL. In this case the id is '3696071951'.
 
@@ -33,14 +45,14 @@ The preview sizes must be specified as single-letter codes. Typically you will o
 and `z` will probably fill the entire screen. Here is the full list of sizes you can use, with their common name on Flickr,
 and then the maximum width or height of that image.
 
-* *o*  "Original", no maximum dimension
-* *b*  "Large", 1024px
-* *z*  "Medium 640", 640px
-* *n*  "Small 320", 320px,
-* *m*  "Small", 240px,
-* *t*  "Thumbnail", 100px
-* *q*  "Large Square", 150px
-* *s*  "Square", 75px
+* **o**  : "Original", no maximum dimension
+* **b**  : "Large", 1024px
+* **z**  : "Medium 640", 640px
+* **n**  : "Small 320", 320px
+* **m**  : "Small", 240px,
+* **t**  : "Thumbnail", 100px
+* **q**  : "Large Square", 150px
+* **s**  : "Square", 75px
  
 The alignment is specified as `left`, `right`, or `center`, like the rest of Octopress.
 
@@ -52,3 +64,5 @@ For photo sets, the final argument controls whether the set description from Fli
 ## Fancybox
 
 While this plugin can be used standalone it is far superior with Fancybox. (Instructions pending)
+
+

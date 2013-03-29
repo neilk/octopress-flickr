@@ -35,7 +35,10 @@ Add these dependencies to your Octopress gemfile:
 
 And do a `gem install` from that directory.
 
-## How to use in a post
+Clone or otherwise obtain the files in this repository on your system. Copy or move the `.rb` and `.scss` files into
+similar containing directories in your Octopress instance.
+
+## How to use the tags in a post
 
 The id of the image is easily obtained from the URL. In this case the id is '3696071951'.
 
@@ -63,6 +66,6 @@ For photo sets, the final argument controls whether the set description from Fli
 
 ## Fancybox
 
-While this plugin can be used standalone it is far superior with Fancybox. (Instructions pending)
+While this plugin can be used standalone it is far superior with the JavaScript image and gallery framework [Fancybox](http://fancyapps.com/fancybox/). (Instructions pending)
 
 

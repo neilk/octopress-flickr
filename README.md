@@ -30,6 +30,9 @@ And do a `gem install` from that directory.
 Clone or otherwise obtain the files in this repository on your system. Copy or move the `.rb` and `.scss` files into
 similar containing directories in your Octopress instance.
 
+While this plugin can be used standalone it is far superior with the JavaScript framework [Fancybox](http://fancyapps.com/fancybox/).
+This will give you a 'lightbox' view for your photos, with captions, as well as a slideshow view for Flickr sets. (Instructions pending).
+
 ## Flickr API Key and Secret
 
 You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
@@ -41,14 +44,12 @@ before you run `rake generate`.
 ## Tags 
 
 This plugin adds two new tags to your Octopress install. Use `flickr_image` to insert a specific image or video. 
-Use `flickr_set` to insert an entire set.
+Use `flickr_set` to insert an entire set. The arguments for these tags are:
 
 ``` md
   {% flickr_image id [preview-size [alignment [caption]] %}
 
-  {% flickr_image id [preview-size [alignment [caption]] %}
-
-  {% flickr_set id [preview-size ["desc"/"nodesc"]] %}
+  {% flickr_set id [preview-size [desc|nodesc]] %}
 ```
 
 On Flickr, the **id** of the image is easily obtained from the URL. In this case the id is '3696071951'.
@@ -67,7 +68,7 @@ and then the maximum width or height of that image.
 * **t**  : "Thumbnail", 100px
 * **q**  : "Large Square", 150px
 * **s**  : "Square", 75px
- 
+
 The **alignment** is specified as `left`, `right`, or `center`, like the rest of Octopress.
 
 The **caption** is a freeform string. If you want to have spaces in the caption, you may escape them directly with backslashes, or simply surround 
@@ -100,7 +101,6 @@ just a bug in the library; it's possible to obtain formats that will work on iOS
 
 ## Fancybox
 
-While this plugin can be used standalone it is far superior with the JavaScript image and gallery framework [Fancybox](http://fancyapps.com/fancybox/). (Instructions pending)
 
 
 

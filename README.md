@@ -99,8 +99,11 @@ end
 The layout is responsive, so it should work well on tablets and mobile devices. Flickr Video may not work on iOS devices (although this is 
 just a bug in the library; it's possible to obtain formats that will work on iOS).
 
-## Fancybox
 
+## HTML5
+
+This plugin generates HTML5. That means it uses tags like `<figure>` and `<figcaption>` and such. This may not look right in very old browsers, 
+but it seems to work in anything better than IE7. 
 
 
 

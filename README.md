@@ -98,16 +98,7 @@ it will be different.
 You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
 
 Then, you'll need to ensure that they are available in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
-before you run `rake generate`. Typically you initialize them in your `.bash_profile`. 
-
-``` sh
-# Flickr API secret
-export FLICKR_API_KEY=abcdef1234567890
-export FLICKR_API_SECRET=0123456789abcdef
-
-# Optional: if you're on Mac OS X, for extra security, keep the API secret as an application password in the Keychain
-# export FLICKR_API_SECRET=$(/usr/bin/security 2>&1 >/dev/null find-generic-password -ga $FLICKR_API_KEY | sed 's/password: //' | sed 's/"//g')
-```
+before you run `rake generate`. 
 
 ## How to use the tags in your blog
 

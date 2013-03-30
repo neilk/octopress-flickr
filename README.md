@@ -67,6 +67,9 @@ before custom/head.html.
 
 That should do it!
 
+For efficiency, you might want to merge the CSS into the SASS system, but you're on your own there - depending on the theme of your blog, 
+it will be different.
+
 ## Flickr API key and secret
 
 You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).

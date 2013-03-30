@@ -65,6 +65,22 @@ before custom/head.html.
 {% include custom/fancybox_head.html %} 
 ```
 
+Everything should work now, but you may notice that when you click on Flickr images, there's a spinner while loading, and it will 
+have this ugly white border. It's doing that because it's picking up a style from your Octopress install. To fix that, change the following
+lines in `sass/base/_theme.scss`.
+
+``` diff
+body {
+-  > div {
++  > #main {
+     border-bottom: 1px solid $page-border-bottom;
+-    > div {
++    > #content {
+       border-right: 1px solid $sidebar-border;
+     }
+   }
+```
+
 That should do it!
 
 For efficiency, you might want to merge the CSS into the SASS system, but you're on your own there - depending on the theme of your blog, 

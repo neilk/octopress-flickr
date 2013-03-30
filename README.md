@@ -17,6 +17,8 @@ and keystrokes enabled, if the image is part of a set.
 
 ![Zoomed view of an image, floating above the blog](screenshots/fancybox.png)
 
+![A set with small square thumbnails and one zoomed image. "Next" button highlighted](screenshots/set-slide.png)
+
 ## Examples
 
 ``` md

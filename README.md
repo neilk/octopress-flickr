@@ -11,6 +11,11 @@ This does not use JavaScript in the browser to insert images - it generates the 
 
 ![Index view of a large image and a large video, at narrow width typical of mobile browsers](screenshots/mobile.png)
 
+If you use Fancybox with this plugin, you can get fancy boxes when
+you click on an image or video. These will have slideshow buttons
+and keystrokes enabled, if the image is part of a set.
+
+![Zoomed view of an image, floating above the blog](screenshots/fancybox.png)
 
 ## Examples
 

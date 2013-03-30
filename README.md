@@ -185,3 +185,6 @@ Obviously using your own images is fine, but be aware that you don't always have
 be sure, ask the author's permission. Or use Flickr's [advanced search](https://www.flickr.com/search/advanced/) to find [Creative Commons](https://creativecommons.org)-licensed media. 
 
 
+## Acknowledgements
+
+Originally based on [this gist](https://gist.github.com/danielres/3156265) by Daniel Reska.

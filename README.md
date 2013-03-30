@@ -31,7 +31,16 @@ and keystrokes enabled, if the image is part of a set.
 {% flickr_set 72157622329642662 t nodesc %}
 ```
 
-## Install
+## Setup
+
+### Obtain a Flickr API key and secret
+
+You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
+
+Then, you'll need to ensure that they are available in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
+before you run `rake generate`. 
+
+### Install the plugin
 
 Add these dependencies to your Octopress gemfile:
 
@@ -46,59 +55,8 @@ And do a `gem install` from that directory.
 Clone or otherwise obtain the files in this repository on your system. Copy the `.rb` and `.scss` files into
 the corresponding directories in your Octopress instance.
 
-### Recommended: install Fancybox
-
-While this plugin can be used standalone, it is far superior with the JavaScript lightbox and slideshow library 
-[Fancybox](http://fancyapps.com/fancybox/). Here's how to do that.
-
-First, download and uncompress [Fancybox](http://fancyapps.com/fancybox/).
-In the directory which was created from uncompressing Fancybox,
-copy the contents of the `source` directory to the `source/fancybox`
-directory in your Octopress install. It might look like this:
-
-``` sh
-$ unzip fancyapps-fancyBox-v2.1.4-0-somehash.zip
-$ cd fancyapps-fancyBox-somehash
-$ cp -R source ~/Sites/myOctopressSite/source/fancybox
-```
-
-Next, in the files you downloaded from this `octopress-flickr` respository, copy the file
-`source/_includes/custom/fancybox_head.html` to the corresponding directory in your Octopress install.
-
-Next, in your Octopress install, in the file `source/_includes/head.html`, add the following line. This line should be after loading jQuery, but 
-before custom/head.html.
-
-``` markdown
-{% include custom/fancybox_head.html %} 
-```
-
-Everything should work now, but you may notice that when you click on Flickr images, there's a spinner while loading, and it will 
-have this ugly white border. It's doing that because it's picking up a style from your Octopress install. To fix that, change the following
-lines in `sass/base/_theme.scss`.
-
-``` diff
-body {
--  > div {
-+  > #main {
-     border-bottom: 1px solid $page-border-bottom;
--    > div {
-+    > #content {
-       border-right: 1px solid $sidebar-border;
-     }
-   }
-```
-
-That should do it!
-
-For efficiency, you might want to merge the CSS into the SASS system, but you're on your own there - depending on the theme of your blog, 
-it will be different.
-
-## Flickr API key and secret
-
-You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
-
-Then, you'll need to ensure that they are available in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
-before you run `rake generate`. 
+Aaand, you're done. You can start using the new tags right away. (But, see below for how to install Fancybox,
+which will greatly improve the UI)
 
 ## How to use the tags in your blog
 
@@ -159,6 +117,52 @@ end
 ```
 
 
+### How to install Fancybox for use with octopress-flickr
+
+While this plugin can be used standalone, it is far superior with the JavaScript lightbox and slideshow library 
+[Fancybox](http://fancyapps.com/fancybox/). Here's how to do that.
+
+First, download and uncompress [Fancybox](http://fancyapps.com/fancybox/).
+In the directory which was created from uncompressing Fancybox,
+copy the contents of the `source` directory to the `source/fancybox`
+directory in your Octopress install. It might look like this:
+
+``` sh
+$ unzip fancyapps-fancyBox-v2.1.4-0-somehash.zip
+$ cd fancyapps-fancyBox-somehash
+$ cp -R source ~/Sites/myOctopressSite/source/fancybox
+```
+
+Next, in the files you downloaded from this `octopress-flickr` respository, copy the file
+`source/_includes/custom/fancybox_head.html` to the corresponding directory in your Octopress install.
+
+Next, in your Octopress install, in the file `source/_includes/head.html`, add the following line. This line should be after loading jQuery, but 
+before custom/head.html.
+
+``` markdown
+{% include custom/fancybox_head.html %} 
+```
+
+Everything should work now, but you may notice that when you click on Flickr images, there's a spinner while loading, and it will 
+have this ugly white border. It's doing that because it's picking up a style from your Octopress install. To fix that, change the following
+lines in `sass/base/_theme.scss`.
+
+``` diff
+body {
+-  > div {
++  > #main {
+     border-bottom: 1px solid $page-border-bottom;
+-    > div {
++    > #content {
+       border-right: 1px solid $sidebar-border;
+     }
+   }
+```
+
+That should do it!
+
+For efficiency, you might want to merge the CSS into the SASS system, but you're on your own there - depending on the theme of your blog, 
+it will be different.
 
 ## Mobile 
 
@@ -168,7 +172,7 @@ just a bug in the library; it's possible to obtain formats that will work on iOS
 
 ## HTML5
 
-This plugin generates HTML5. That means it uses tags like `<figure>` and `<figcaption>` and such. This may not look right in very old browsers, 
+This plugin tries to generate standards-compliant, modern HTML5. That means it uses tags like `<figure>` and `<figcaption>` and such. This may not look right in very old browsers, 
 but it seems to work in anything better than IE7. 
 
 
@@ -179,6 +183,7 @@ default, so don't mess with it.
 
 Obviously using your own images is fine, but be aware that you don't always have the rights to republish images on your own blog. If you want to
 be sure, ask the author's permission. Or use Flickr's [advanced search](https://www.flickr.com/search/advanced/) to find [Creative Commons](https://creativecommons.org)-licensed media. 
+
 
 
 ## Acknowledgements

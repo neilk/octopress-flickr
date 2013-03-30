@@ -146,7 +146,7 @@ For photo sets, the final argument is not a caption, but controls whether the se
 
 This plugin caches API results and generated HTML in a `.flickr-cache` directory in your Octopress root. Usually this is exactly what you want,
 because after the first time downloading info, regenerating your blog will be very quick. But, in case the information about those photos 
-changes, to see updated, you need to remove those cache files and then `rake regenerate`.
+changes, to see updated, you need to remove those cache files and then `rake generate`.
 
 At the moment it is not easy to remove the caches for some photos or sets and not others. So it's all or nothing.
 

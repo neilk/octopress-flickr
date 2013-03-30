@@ -36,21 +36,54 @@ Add these dependencies to your Octopress gemfile:
 
 And do a `gem install` from that directory.
 
-Clone or otherwise obtain the files in this repository on your system. Copy or move the `.rb` and `.scss` files into
-similar containing directories in your Octopress instance.
+Clone or otherwise obtain the files in this repository on your system. Copy the `.rb` and `.scss` files into
+the corresponding directories in your Octopress instance.
 
-While this plugin can be used standalone it is far superior with the JavaScript framework [Fancybox](http://fancyapps.com/fancybox/).
-This will give you a 'lightbox' view for your photos, with captions, as well as a slideshow view for Flickr sets. (Instructions pending).
+### Recommended: install Fancybox
 
-## Flickr API Key and Secret
+While this plugin can be used standalone, it is far superior with the JavaScript lightbox and slideshow library 
+[Fancybox](http://fancyapps.com/fancybox/). Here's how to do that.
+
+First, download and uncompress [Fancybox](http://fancyapps.com/fancybox/).
+In the directory which was created from uncompressing Fancybox,
+copy the contents of the `source` directory to the `source/fancybox`
+directory in your Octopress install. It might look like this:
+
+``` sh
+$ unzip fancyapps-fancyBox-v2.1.4-0-somehash.zip
+$ cd fancyapps-fancyBox-somehash
+$ cp -R source ~/Sites/myOctopressSite/source/fancybox
+```
+
+Next, in the files you downloaded from this `octopress-flickr` respository, copy the file
+`source/_includes/custom/fancybox_head.html` to the corresponding directory in your Octopress install.
+
+Next, in your Octopress install, in the file `source/_includes/head.html`, add the following line. This line should be after loading jQuery, but 
+before custom/head.html.
+
+``` markdown
+{% include custom/fancybox_head.html %} 
+```
+
+That should do it!
+
+## Flickr API key and secret
 
 You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
 
-Then, you'll need to ensure that they are in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
-before you run `rake generate`. 
+Then, you'll need to ensure that they are available in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
+before you run `rake generate`. Typically you initialize them in your `.bash_profile`. 
 
+``` sh
+# Flickr API secret
+export FLICKR_API_KEY=abcdef1234567890
+export FLICKR_API_SECRET=0123456789abcdef
 
-## Tags 
+# Optional: if you're on Mac OS X, for extra security, keep the API secret as an application password in the Keychain
+# export FLICKR_API_SECRET=$(/usr/bin/security 2>&1 >/dev/null find-generic-password -ga $FLICKR_API_KEY | sed 's/password: //' | sed 's/"//g')
+```
+
+## How to use the tags in your blog
 
 This plugin adds two new tags to your Octopress install. Use `flickr_image` to insert a specific image or video. 
 Use `flickr_set` to insert an entire set. The arguments for these tags are:

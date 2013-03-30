@@ -67,7 +67,7 @@ figure.video-preview .video-icon {
   padding-right: .15em;
 }
 
-.noborder, figure img, figure video, figure .flash-video {
+.noborder figure, .noborder, figure img, figure video, figure .flash-video {
   @include border-radius(0px);
   @include box-shadow(none);
   @include box-sizing(content-box);

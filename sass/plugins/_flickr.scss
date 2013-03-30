@@ -83,8 +83,8 @@ figure a img, figure a video, figure a .flash-video {
 
 /* customization for fancybox */
 /* fonts  and layout */
-.fancybox-title, .fancybox-title h1 {
-  font-family: $sans;
+.fancybox-title, .fancybox-title h1, .fancybox-title .description {
+  font-family: $sans !important;
   text-align: center;
 }
 

@@ -93,11 +93,12 @@ the entire argument with quotation marks. If your caption must also contain quot
 
 For photo sets, the final argument is not a caption, but controls whether the set description from Flickr is prepended to the entire set.
 
-## Caching
+## I updated my photos on Flickr; why aren't they updating in Octopress?
 
-This plugin caches API results and generated HTML in a `.flickr-cache` directory in your Octopress root. Usually this is exactly what you want,
-because after the first time downloading info, regenerating your blog will be very quick. But, in case the information about those photos 
-changes, to see updates, you need to remove those cache files and then `rake generate`.
+This plugin caches API results and generated HTML in a `.flickr-cache` directory in your Octopress root. This makes sure that we aren't wasting
+time redownloading information from Flickr every time you update your blog. 
+
+But, in case the information about those photos changes, to see updates, you need to remove those cache files and then `rake generate`.
 
 At the moment it is not easy to remove the caches for some photos or sets and not others. Some command-line fu can help - this removes cache
 files younger than one hour:
@@ -117,10 +118,10 @@ end
 ```
 
 
-### How to install Fancybox for use with octopress-flickr
+## Fancybox 
 
 While this plugin can be used standalone, it is far superior with the JavaScript lightbox and slideshow library 
-[Fancybox](http://fancyapps.com/fancybox/). Here's how to do that.
+[Fancybox](http://fancyapps.com/fancybox/). Here's how to set it up.
 
 First, download and uncompress [Fancybox](http://fancyapps.com/fancybox/).
 In the directory which was created from uncompressing Fancybox,
@@ -164,17 +165,10 @@ That should do it!
 For efficiency, you might want to merge the CSS into the SASS system, but you're on your own there - depending on the theme of your blog, 
 it will be different.
 
-## Mobile 
-
-The layout is responsive, so it should work well on tablets and mobile devices. Flickr Video may not work on iOS devices (although this is 
-just a bug in the library; it's possible to obtain formats that will work on iOS).
-
-
 ## HTML5
 
 This plugin tries to generate standards-compliant, modern HTML5. That means it uses tags like `<figure>` and `<figcaption>` and such. This may not look right in very old browsers, 
 but it seems to work in anything better than IE7. 
-
 
 ## Be nice
 

@@ -522,7 +522,7 @@ class FlickrSetTag < Liquid::Tag
     # outputHtml.push(titleHtml)
     
     if showSetDesc and not info.description.empty?
-      outputHtml.push('<p>' + info.description + '</p>')
+      outputHtml.push('<p>' + info.description.gsub(/\n/, '<br/>') + '</p>')
     end
 
     setPhotosHtml = [];

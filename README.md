@@ -3,82 +3,23 @@ octopress-flickr
 
 Display Flickr images, video, and sets in Octopress blog posts.
 
-This does not use JavaScript in the browser to insert images - it generates the appropriate HTML right in the post. Screenshots:
-
-<div class="flickr-set">
-
-<div class="flickr-thumbnail" style="width: 240px; display: inline-block;">
-<a href="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_z.jpg" class="fancybox" data-title-id="flickr-photo-8604488662" data-media="photo" rel="flickr-set-72157633123605507">
+<p>
+<a href="http://www.flickr.com/photos/brevity/8604488662">
 <img src="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_m.jpg" title="octopress-flickr fancybox previews" style="width: 240px; height: 219px;">
 </a>
-<div id="flickr-photo-8604488662">
-<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604488662">
-octopress-flickr fancybox previews</a>
- by Neil
-</div>
-</div>
-
-<div class="flickr-thumbnail" style="width: 240px; display: inline-block;">
-<a href="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_z.jpg" class="fancybox" data-title-id="flickr-photo-8604488436" data-media="photo" rel="flickr-set-72157633123605507">
+<a href="http://www.flickr.com/photos/brevity/8604488436">
 <img src="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_m.jpg" title="Simple image" style="width: 240px; height: 216px;">
 </a>
-<div id="flickr-photo-8604488436">
-<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604488436">
-Simple image</a>
- by Neil
-<div class="description">
-The simplest use of the <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
-octopress-flickr plugin</a>
- - include content in your blog, with a link to the Flickr page.</div>
-</div>
-</div>
-
-<div class="flickr-thumbnail" style="width: 165px; display: inline-block;">
-<a href="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_z.jpg" class="fancybox" data-title-id="flickr-photo-8603387443" data-media="photo" rel="flickr-set-72157633123605507">
+<a href="http://www.flickr.com/photos/brevity/8603387443">
 <img src="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_m.jpg" title="narrow widths or mobile browsers" style="width: 165px; height: 240px;">
 </a>
-<div id="flickr-photo-8603387443">
-<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8603387443">
-narrow widths or mobile browsers</a>
- by Neil
-<div class="description">
-Octopress is itself reasonably good at "responsive" layout, and <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
-octopress-flickr</a>
- itself has a few heuristics specifically for narrow widths.</div>
-</div>
-</div>
-
-<div class="flickr-thumbnail" style="width: 240px; display: inline-block;">
-<a href="http://farm9.staticflickr.com/8536/8603387237_83511ec935_z.jpg" class="fancybox" data-title-id="flickr-photo-8603387237" data-media="photo" rel="flickr-set-72157633123605507">
+<a href="http://www.flickr.com/photos/brevity/8603387237">
 <img src="http://farm9.staticflickr.com/8536/8603387237_83511ec935_m.jpg" title="Sets in &quot;slideshow&quot; mode" style="width: 240px; height: 185px;">
 </a>
-<div id="flickr-photo-8603387237">
-<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8603387237">
-Sets in slideshow mode</a>
- by Neil
-<div class="description">
-If you have the jQuery plugin Fancybox installed, <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
-octopress-flickr plugin</a>
- will display next and previous buttons for your sets, and enable left and right keystrokes.</div>
-</div>
-</div>
-
-<div class="flickr-thumbnail" style="width: 240px; display: inline-block;">
-<a href="http://farm9.staticflickr.com/8250/8604487732_e20492a366_z.jpg" class="fancybox" data-title-id="flickr-photo-8604487732" data-media="photo" rel="flickr-set-72157633123605507">
+<a href="http://www.flickr.com/photos/brevity/8604487732">
 <img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="sets" style="width: 240px; height: 216px;">
 </a>
-<div id="flickr-photo-8604487732">
-<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604487732">
-sets</a>
- by Neil
-<div class="description">
-A simple use of Flickr sets with the <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
-octopress-flickr plugin</a>
-. Just like Flickr sets, you can mix photo and video content. Videos get a little "play" icon.</div>
-</div>
-</div>
-</div>
-
+</p>
 
 ## Examples
 

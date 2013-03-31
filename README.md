@@ -21,10 +21,10 @@ Display Flickr images, video, and sets in Octopress blog posts.
 </a>
 </p>
 
-## Examples
+## Synopsis
 
 ``` md
-{% flickr_image 7779670214 }
+{% flickr_image 7779670214 %}
 
 {% flickr_image 3115811489 t %}
 

@@ -5,23 +5,79 @@ Display Flickr images, video, and sets in Octopress blog posts.
 
 This does not use JavaScript in the browser to insert images - it generates the appropriate HTML right in the post. Screenshots:
 
-<div class="noborder" style="-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;border: none;">
-<section class="flickr-set" style="text-align: center;"><figure class="flickr-thumbnail" style="width: 240px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;display: inline-block;margin-right: 2em;margin-bottom: 2em;vertical-align: middle;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;border: none;"><a href="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_z.jpg" class="fancybox" data-title-id="flickr-photo-8604488662" data-media="photo" rel="flickr-set-72157633123605507"><img src="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_m.jpg" title="octopress-flickr fancybox previews" style="width: 240px;height: 219px;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;border: none;vertical-align: middle;"></a><figcaption id="flickr-photo-8604488662" style="font-size: smaller;line-height: 1.6em;display: none;"><h5 style="font-size: xx-small;font-family: &quot;Telex&quot;,sans-serif;text-align: center;margin-bottom: 0px;"><a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604488662">octopress-flickr fancybox previews</a> by Neil</h5><div class="description" style="display: none;">If you have the jQuery plugin Fancybox, <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">octopress-flickr</a> allows you to view a zoomed image in a lightbox.</div></figcaption></figure><figure class="flickr-thumbnail" style="width: 240px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;display: inline-block;margin-right: 2em;margin-bottom: 2em;vertical-align: middle;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;border: none;"><a href="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_z.jpg" class="fancybox" data-title-id="flickr-photo-8604488436" data-media="photo" rel="flickr-set-72157633123605507"><img src="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_m.jpg" title="Simple image" style="width: 240px;height: 216px;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;border: none;vertical-align: middle;"></a><figcaption id="flickr-photo-8604488436" style="font-size: smaller;line-height: 1.6em;display: none;"><h5 style="font-size: xx-small;font-family: &quot;Telex&quot;,sans-serif;text-align: center;margin-bottom: 0px;"><a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604488436">Simple image</a> by Neil</h5><div class="description" style="display: none;">The simplest use of the <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">octopress-flickr plugin</a> - include content in your blog, with a link to the Flickr page.</div></figcaption></figure><figure class="flickr-thumbnail" style="width: 165px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;display: inline-block;margin-right: 2em;margin-bottom: 2em;vertical-align: middle;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;border: none;"><a href="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_z.jpg" class="fancybox" data-title-id="flickr-photo-8603387443" data-media="photo" rel="flickr-set-72157633123605507"><img src="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_m.jpg" title="narrow widths or mobile browsers" style="width: 165px;height: 240px;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;border: none;vertical-align: middle;"></a><figcaption id="flickr-photo-8603387443" style="font-size: smaller;line-height: 1.6em;display: none;"><h5 style="font-size: xx-small;font-family: &quot;Telex&quot;,sans-serif;text-align: center;margin-bottom: 0px;"><a class="flickr-link" href="http://www.flickr.com/photos/brevity/8603387443">narrow widths or mobile browsers</a> by Neil</h5><div class="description" style="display: none;">Octopress is itself reasonably good at "responsive" layout, and <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">octopress-flickr</a> itself has a few heuristics specifically for narrow widths.</div></figcaption></figure><figure class="flickr-thumbnail" style="width: 240px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;display: inline-block;margin-right: 2em;margin-bottom: 2em;vertical-align: middle;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;border: none;"><a href="http://farm9.staticflickr.com/8536/8603387237_83511ec935_z.jpg" class="fancybox" data-title-id="flickr-photo-8603387237" data-media="photo" rel="flickr-set-72157633123605507"><img src="http://farm9.staticflickr.com/8536/8603387237_83511ec935_m.jpg" title="Sets in &quot;slideshow&quot; mode" style="width: 240px;height: 185px;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;border: none;vertical-align: middle;"></a><figcaption id="flickr-photo-8603387237" style="font-size: smaller;line-height: 1.6em;display: none;"><h5 style="font-size: xx-small;font-family: &quot;Telex&quot;,sans-serif;text-align: center;margin-bottom: 0px;"><a class="flickr-link" href="http://www.flickr.com/photos/brevity/8603387237">Sets in âslideshowâ mode</a> by Neil</h5><div class="description" style="display: none;">If you have the jQuery plugin Fancybox installed, <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">octopress-flickr plugin</a> will display next and previous buttons for your sets, and enable left and right keystrokes.</div></figcaption></figure><figure class="flickr-thumbnail" style="width: 240px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;display: inline-block;margin-right: 2em;margin-bottom: 2em;vertical-align: middle;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;border: none;"><a href="http://farm9.staticflickr.com/8250/8604487732_e20492a366_z.jpg" class="fancybox" data-title-id="flickr-photo-8604487732" data-media="photo" rel="flickr-set-72157633123605507"><img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="sets" style="width: 240px;height: 216px;-webkit-border-radius: 0px;-moz-border-radius: 0px;-ms-border-radius: 0px;-o-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;border: none;vertical-align: middle;"></a><figcaption id="flickr-photo-8604487732" style="font-size: smaller;line-height: 1.6em;display: none;"><h5 style="font-size: xx-small;font-family: &quot;Telex&quot;,sans-serif;text-align: center;margin-bottom: 0px;"><a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604487732">sets</a> by Neil</h5><div class="description" style="display: none;">A simple use of Flickr sets with the <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">octopress-flickr plugin</a>. Just like Flickr sets, you can mix photo and video content. Videos get a little "play" icon.</div></figcaption></figure></section>
-</div>
+<section class="flickr-set">
+<figure class="flickr-thumbnail" style="width: 240px; display: inline-block;">
+<a href="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_z.jpg" class="fancybox" data-title-id="flickr-photo-8604488662" data-media="photo" rel="flickr-set-72157633123605507">
+<img src="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_m.jpg" title="octopress-flickr fancybox previews" style="width: 240px; height: 219px;">
+</a>
+<figcaption id="flickr-photo-8604488662">
+<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604488662">
+octopress-flickr fancybox previews</a>
+ by Neil
+</figcaption>
+</figure>
 
-![Blog post using the flickr_image tag](screenshots/image.png)
+<figure class="flickr-thumbnail" style="width: 240px; display: inline-block;">
+<a href="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_z.jpg" class="fancybox" data-title-id="flickr-photo-8604488436" data-media="photo" rel="flickr-set-72157633123605507">
+<img src="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_m.jpg" title="Simple image" style="width: 240px; height: 216px;">
+</a>
+<figcaption id="flickr-photo-8604488436">
+<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604488436">
+Simple image</a>
+ by Neil
+<div class="description">
+The simplest use of the <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
+octopress-flickr plugin</a>
+ - include content in your blog, with a link to the Flickr page.</div>
+</figcaption>
+</figure>
 
-![Blog post using the flickr_set tag](screenshots/set.png)
+<figure class="flickr-thumbnail" style="width: 165px; display: inline-block;">
+<a href="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_z.jpg" class="fancybox" data-title-id="flickr-photo-8603387443" data-media="photo" rel="flickr-set-72157633123605507">
+<img src="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_m.jpg" title="narrow widths or mobile browsers" style="width: 165px; height: 240px;">
+</a>
+<figcaption id="flickr-photo-8603387443">
+<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8603387443">
+narrow widths or mobile browsers</a>
+ by Neil
+<div class="description">
+Octopress is itself reasonably good at "responsive" layout, and <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
+octopress-flickr</a>
+ itself has a few heuristics specifically for narrow widths.</div>
+</figcaption>
+</figure>
 
-![Index view of a large image and a large video, at narrow width typical of mobile browsers](screenshots/mobile.png)
+<figure class="flickr-thumbnail" style="width: 240px; display: inline-block;">
+<a href="http://farm9.staticflickr.com/8536/8603387237_83511ec935_z.jpg" class="fancybox" data-title-id="flickr-photo-8603387237" data-media="photo" rel="flickr-set-72157633123605507">
+<img src="http://farm9.staticflickr.com/8536/8603387237_83511ec935_m.jpg" title="Sets in &quot;slideshow&quot; mode" style="width: 240px; height: 185px;">
+</a>
+<figcaption id="flickr-photo-8603387237">
+<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8603387237">
+Sets in slideshow mode</a>
+ by Neil
+<div class="description">
+If you have the jQuery plugin Fancybox installed, <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
+octopress-flickr plugin</a>
+ will display next and previous buttons for your sets, and enable left and right keystrokes.</div>
+</figcaption>
+</figure>
 
-If you use Fancybox with this plugin, you can get fancy boxes when
-you click on an image or video. These will have slideshow buttons
-and keystrokes enabled, if the image is part of a set.
+<figure class="flickr-thumbnail" style="width: 240px; display: inline-block;">
+<a href="http://farm9.staticflickr.com/8250/8604487732_e20492a366_z.jpg" class="fancybox" data-title-id="flickr-photo-8604487732" data-media="photo" rel="flickr-set-72157633123605507">
+<img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="sets" style="width: 240px; height: 216px;">
+</a>
+<figcaption id="flickr-photo-8604487732">
+<a class="flickr-link" href="http://www.flickr.com/photos/brevity/8604487732">
+sets</a>
+ by Neil
+<div class="description">
+A simple use of Flickr sets with the <a href="https://github.com/neilk/octopress-flickr" rel="nofollow">
+octopress-flickr plugin</a>
+. Just like Flickr sets, you can mix photo and video content. Videos get a little "play" icon.</div>
+</figcaption>
+</figure>
+</section>
 
-![Zoomed view of an image, floating above the blog](screenshots/fancybox.png)
-
-![A set with small square thumbnails and one zoomed image. "Next" button highlighted](screenshots/set-slide.png)
 
 ## Examples
 

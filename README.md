@@ -52,15 +52,19 @@ Add these dependencies to your Octopress gemfile:
   gem 'persistent_memoize'
 ```
 
-And do a `gem install` from that directory.
+Do a `gem install` from that directory.
 
-Clone or otherwise obtain the files in this repository on your system. Copy the `.rb` and `.scss` files into
-the corresponding directories in your Octopress instance.
+Download the files in this repository. Copy the `.rb` and `.scss` files into the corresponding directories in your Octopress instance. This might 
+work:
 
-Aaand, you're done. You can start using the new tags right away. (But, see below for how to install Fancybox,
-which will greatly improve the UI)
+``` bash
+find . \( -name '*.rb' -o -name '*.scss' \) -exec cp {} /path/to/octopress/{} \;
+```
 
-## How to use the tags in your blog
+And, you're done. You can start using the new tags right away. (But, see below for how to install Fancybox,
+which will greatly improve the UI).
+
+## How to use the tags
 
 This plugin adds two new tags to your Octopress install. Use `flickr_image` to insert a specific image or video. 
 Use `flickr_set` to insert an entire set. The arguments for these tags are:
@@ -133,7 +137,7 @@ directory in your Octopress install. It might look like this:
 ``` sh
 $ unzip fancyapps-fancyBox-v2.1.4-0-somehash.zip
 $ cd fancyapps-fancyBox-somehash
-$ cp -R source ~/Sites/myOctopressSite/source/fancybox
+$ cp -R source /path/to/octopress/source/fancybox
 ```
 
 Next, in the files you downloaded from this `octopress-flickr` respository, copy the file

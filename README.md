@@ -58,7 +58,8 @@ Download the files in this repository. Copy the `.rb` and `.scss` files into the
 work:
 
 ``` bash
-find . \( -name '*.rb' -o -name '*.scss' \) -exec cp {} /path/to/octopress/{} \;
+$ cd octopress-flickr
+$ find . \( -name '*.rb' -o -name '*.scss' \) -exec cp {} /path/to/octopress/{} \;
 ```
 
 And, you're done. You can start using the new tags right away. (But, see below for how to install Fancybox,

@@ -52,7 +52,7 @@ Add these dependencies to your Octopress gemfile:
   gem 'persistent_memoize'
 ```
 
-Do a `gem install` from that directory.
+Do a `bundle install` from that directory.
 
 Download the files in this repository. Copy the `.rb` and `.scss` files into the corresponding directories in your Octopress instance. This might 
 work:

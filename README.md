@@ -44,6 +44,8 @@ before you run `rake generate`.
 
 ### Install the plugin
 
+First of all, if you are going to install a custom theme, do that first.
+
 Add these dependencies to your Octopress gemfile:
 
 ``` Rakefile
@@ -60,6 +62,12 @@ work:
 ``` bash
 $ cd octopress-flickr
 $ find . \( -name '*.rb' -o -name '*.scss' \) -exec cp {} /path/to/octopress/{} \;
+```
+
+Finally, in your Octopress instance, make sure that `sass/screen.scss` ends with the following line.
+
+``` sass
+@import "plugins/**/*";
 ```
 
 And, you're done. You can start using the new tags right away. (But, see below for how to install Fancybox,

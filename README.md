@@ -4,22 +4,22 @@ octopress-flickr
 Display Flickr images, video, and sets in Octopress blog posts.
 
 <p>
-<a href="http://www.flickr.com/photos/brevity/8604488662">
+<a href="http://www.flickr.com/photos/brevity/8604488662/in/set-72157633123605507/">
 <img src="http://farm9.staticflickr.com/8102/8604488662_0bca4dbd8d_m.jpg" title="octopress-flickr fancybox previews" style="width: 240px; height: 219px;">
 </a>
-<a href="http://www.flickr.com/photos/brevity/8604488436">
+<a href="http://www.flickr.com/photos/brevity/8604488436/in/set-72157633123605507/">
 <img src="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_m.jpg" title="Simple image" style="width: 240px; height: 216px;">
 </a>
-<a href="http://www.flickr.com/photos/brevity/8810723278/">
+<a href="http://www.flickr.com/photos/brevity/8810723278/in/set-72157633123605507/">
 <img src="http://farm9.staticflickr.com/8140/8810723278_6e9deb0a6a_m.jpg" title="Responsive design for mobile browsers" style="width: 128px; height: 240px;">
 </a>
-<a href="http://www.flickr.com/photos/brevity/8603387237">
+<a href="http://www.flickr.com/photos/brevity/8603387237/in/set-72157633123605507/">
 <img src="http://farm9.staticflickr.com/8536/8603387237_83511ec935_m.jpg" title="Sets in &quot;slideshow&quot; mode" style="width: 240px; height: 185px;">
 </a>
-<a href="http://www.flickr.com/photos/brevity/8604487732">
+<a href="http://www.flickr.com/photos/brevity/8604487732/in/set-72157633123605507/">
 <img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="Sets" style="width: 240px; height: 216px;">
 </a>
-<a href="http://www.flickr.com/photos/brevity/8799830039">
+<a href="http://www.flickr.com/photos/brevity/8799830039/in/set-72157633123605507/">
 <img src="http://farm6.staticflickr.com/5455/8799830039_15720b1f00_m.jpg" title="Works with themes" style="width: 240px; height: 164px;">
 </a>
 </p>

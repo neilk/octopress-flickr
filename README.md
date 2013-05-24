@@ -44,8 +44,6 @@ before you run `rake generate`.
 
 ### Install the plugin
 
-First of all, if you are going to install a custom theme, do that first.
-
 Add these dependencies to your Octopress gemfile:
 
 ``` Rakefile

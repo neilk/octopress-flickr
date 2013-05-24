@@ -19,6 +19,9 @@ Display Flickr images, video, and sets in Octopress blog posts.
 <a href="http://www.flickr.com/photos/brevity/8604487732">
 <img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="sets" style="width: 240px; height: 216px;">
 </a>
+<a href="http://www.flickr.com/photos/brevity/8799830039">
+<img src="http://farm6.staticflickr.com/5455/8799830039_15720b1f00_m.jpg" title="themed" style="width: 240px; height: 164px;">
+</a>
 </p>
 
 ## Synopsis

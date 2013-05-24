@@ -10,17 +10,17 @@ Display Flickr images, video, and sets in Octopress blog posts.
 <a href="http://www.flickr.com/photos/brevity/8604488436">
 <img src="http://farm9.staticflickr.com/8402/8604488436_9144764e1d_m.jpg" title="Simple image" style="width: 240px; height: 216px;">
 </a>
-<a href="http://www.flickr.com/photos/brevity/8603387443">
-<img src="http://farm9.staticflickr.com/8546/8603387443_91763db0bb_m.jpg" title="narrow widths or mobile browsers" style="width: 165px; height: 240px;">
+<a href="http://www.flickr.com/photos/brevity/8810723278/">
+<img src="http://farm9.staticflickr.com/8140/8810723278_6e9deb0a6a_m.jpg" title="Responsive design for mobile browsers" style="width: 128px; height: 240px;">
 </a>
 <a href="http://www.flickr.com/photos/brevity/8603387237">
 <img src="http://farm9.staticflickr.com/8536/8603387237_83511ec935_m.jpg" title="Sets in &quot;slideshow&quot; mode" style="width: 240px; height: 185px;">
 </a>
 <a href="http://www.flickr.com/photos/brevity/8604487732">
-<img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="sets" style="width: 240px; height: 216px;">
+<img src="http://farm9.staticflickr.com/8250/8604487732_e20492a366_m.jpg" title="Sets" style="width: 240px; height: 216px;">
 </a>
 <a href="http://www.flickr.com/photos/brevity/8799830039">
-<img src="http://farm6.staticflickr.com/5455/8799830039_15720b1f00_m.jpg" title="themed" style="width: 240px; height: 164px;">
+<img src="http://farm6.staticflickr.com/5455/8799830039_15720b1f00_m.jpg" title="Works with themes" style="width: 240px; height: 164px;">
 </a>
 </p>
 

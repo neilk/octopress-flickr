@@ -564,8 +564,8 @@ class FlickrSetTag < Liquid::Tag
 
 end
 
-FlickRaw.api_key        = ENV['FLICKR_API_KEY']
-FlickRaw.shared_secret  = ENV['FLICKR_API_SECRET']
+FlickRaw.api_key        = ENV['FLICKR_API_KEY'] || Jekyll.configuration({})['flickr']['api_key']
+FlickRaw.shared_secret  = ENV['FLICKR_API_SECRET'] || Jekyll.configuration({})['flickr']['shared_secret']
 
 def flickrCached; $flickrCached ||= FlickrApiCached.new end
 Liquid::Template.register_tag("flickr_image", FlickrImageTag)

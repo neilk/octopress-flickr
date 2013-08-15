@@ -42,8 +42,17 @@ Display Flickr images, video, and sets in Octopress blog posts.
 
 You're going to need to obtain a [Flickr API key and secret](http://www.flickr.com/services/developer/api/).
 
-Then, you'll need to ensure that they are available in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
-before you run `rake generate`. 
+Then, you'll need to ensure that they are available to Octopress. You can do this in two ways:
+
+1. put them in the environment variables `FLICKR_API_KEY` and `FLICKR_API_SECRET`, 
+2. add them to your `config.yml` like so:
+
+``` yaml
+flickr:
+  api_key: <api_key>
+  shared_secret: <shared_secret>
+</api>
+```
 
 ### Install the plugin
 

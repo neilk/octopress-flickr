@@ -51,7 +51,6 @@ Then, you'll need to ensure that they are available to Octopress. You can do thi
 flickr:
   api_key: <api_key>
   shared_secret: <shared_secret>
-</api>
 ```
 
 ### Install the plugin

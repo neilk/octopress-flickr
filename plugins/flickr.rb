@@ -540,7 +540,9 @@ class FlickrSetTag < Liquid::Tag
         "origHeight" => photo["height_o"],
         "title" => photo["title"],
         # this doesn't call the api, it constructs the URL from info retrieved
-        "page_url" => FlickRaw.url_photopage(photo),
+        # Not using FlickRaw.url_photopage() because when user doesn't define pathalias, no owner in photo record,
+        # so can't construct URL. (bug in Flickr API?)
+        "page_url" => FlickRaw.url_photostream(response) + photo.id,
         "gallery_id" => "flickr-set-" + id
       }
       photoInfoResponse = flickrCached.photos.getInfo(photo_id: photo["id"])

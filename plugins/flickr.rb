@@ -9,6 +9,8 @@ require "persistent_memoize"
 # The risk is relatively low, since Flickr goes to great lengths to sanitize their inputs. But
 # an attacker could exploit some difference between the two sites (encoding, maybe) to do XSS.
 
+# The author of FlickRaw hasn't made this the default yet, but Flickr requires it :(
+FlickRaw.secure = true
 
 module TagUtil 
   

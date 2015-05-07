@@ -453,7 +453,11 @@ class FlickrImageTag < Liquid::Tag
   end
 
   def render(context)
-    self.getHtml(@id, @size, @klass, @desc)
+     FlickRaw.api_key        = ENV['FLICKR_API_KEY'] || context.registers[:site].config['flickr']['api_key']
+     FlickRaw.shared_secret  = ENV['FLICKR_API_SECRET'] || context.registers[:site].config['flickr']['shared_secret']
+     self.getHtml(@id, @size, @klass, @desc)
+  rescue
+     $stderr.print("flickr.rb could not be configured. See documentation.\n")
   end
 
   def getHtml(id, size, klass, desc)
@@ -511,7 +515,11 @@ class FlickrSetTag < Liquid::Tag
   end
 
   def render(context)
-    getHtml(@id, @size, @showSetDesc)
+     FlickRaw.api_key        = ENV['FLICKR_API_KEY'] || context.registers[:site].config['flickr']['api_key']
+     FlickRaw.shared_secret  = ENV['FLICKR_API_SECRET'] || context.registers[:site].config['flickr']['shared_secret']
+     getHtml(@id, @size, @showSetDesc)
+  rescue
+     $stderr.print("flickr.rb could not be configured. See documentation.\n")
   end
 
   def getHtml(id, size, showSetDesc)
@@ -568,12 +576,6 @@ class FlickrSetTag < Liquid::Tag
 
 end
 
-begin
-  FlickRaw.api_key        = ENV['FLICKR_API_KEY'] || Jekyll.configuration({})['flickr']['api_key']
-  FlickRaw.shared_secret  = ENV['FLICKR_API_SECRET'] || Jekyll.configuration({})['flickr']['shared_secret']
-rescue
-  $stderr.print("flickr.rb could not be configured. See documentation.\n")
-end
 
 def flickrCached; $flickrCached ||= FlickrApiCached.new end
 Liquid::Template.register_tag("flickr_image", FlickrImageTag)
